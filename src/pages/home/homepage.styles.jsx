@@ -1,11 +1,17 @@
 import styled from 'styled-components';
 
 export const HomePageContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  border: solid 1px;
+  margin: 40px;
 `
 
 export const Title = styled.h1`
-  font-size: 24px
+  text-align: center;
+  font-size: 24px;
+`
+
+export const CountriesContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 `
