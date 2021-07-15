@@ -12,6 +12,7 @@ export const Title = styled.h1`
 export const CountriesContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
+  margin-top: 50px;
   flex-direction: row;
   justify-content: space-around;
 `
