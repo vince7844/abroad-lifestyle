@@ -3,7 +3,7 @@ import { DropDownContainer } from './dropdown-menu.styles';
 // import img from '../../assets/pictures/flags/france.png'
 
 const DropDownMenu = ({name, imageUrl}) => (
-    <DropDownContainer style={{backgroundImage: `url('images/flags/${imageUrl}')`}} 
+    <DropDownContainer background={imageUrl}
                        onClick={() => alert(`Hey ${name} !`)} />
 )
 

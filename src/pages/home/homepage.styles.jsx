@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const HomePageContainer = styled.div`
-  border: solid 1px;
   margin: 40px;
 `
 
