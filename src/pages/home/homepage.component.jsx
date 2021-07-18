@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import DropDownMenu from '../../components/dropdown-menu/dropdown-menu.component'
+import Countries from '../../components/countries/countries.component';
 import { HomePageContainer, Title, CountriesContainer } from './homepage.styles';
 import { countries } from '../../data/data'; 
 
@@ -17,7 +17,7 @@ class HomePage extends Component  {
         <CountriesContainer>
           {
             Object.values(countries).map(({id, ...otherItemProps}) => 
-              <DropDownMenu key={id} {...otherItemProps} />
+              <Countries key={id} {...otherItemProps} />
             )
           }
         </CountriesContainer>

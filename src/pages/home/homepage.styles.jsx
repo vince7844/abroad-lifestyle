@@ -6,13 +6,12 @@ export const HomePageContainer = styled.div`
 
 export const Title = styled.h1`
   text-align: center;
-  font-size: 24px;
+  font-size: 34px;
 `
 
 export const CountriesContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
-  margin-top: 50px;
   flex-direction: row;
   justify-content: space-around;
 `

@@ -1,10 +1,12 @@
 import React from 'react' 
-import { DropDownContainer } from './dropdown-menu.styles';
+import { DropDownMenuContainer } from './dropdown-menu.styles';
 
-const DropDownMenu = ({name, imageUrl}) => (
-    <DropDownContainer background={imageUrl}
-                       onClick={() => alert(`Hey ${name} !`)} />
+const DropDownMenu = ({children}) => (
+  <DropDownMenuContainer>
+    {children}
+  </DropDownMenuContainer>
 )
+
 
 
 export default DropDownMenu;
