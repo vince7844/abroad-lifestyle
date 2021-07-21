@@ -1,12 +1,12 @@
 import React from 'react' 
-import { DropDownMenuContainer } from './dropdown-menu.styles';
+import { StyledLink } from './dropdown-menu.styles';
 
-const DropDownMenu = ({children}) => (
-  <DropDownMenuContainer>
-    {children}
-  </DropDownMenuContainer>
-)
-
-
-
+const DropDownMenu = ({children, cityName}) => {
+  return (
+    <StyledLink to={`/city/${cityName}`}>
+      {children}
+    </StyledLink>
+  )
+}
+  
 export default DropDownMenu;

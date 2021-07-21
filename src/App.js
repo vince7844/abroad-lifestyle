@@ -1,8 +1,10 @@
 import React, { Fragment } from 'react';
 import './App.css';
 import { Switch, Route } from 'react-router-dom';
-import HomePage from './pages/home/homepage.component';
 import { GlobalStyle } from './globalStyles';
+import HomePage from './pages/home/homepage.component';
+import City from './pages/city/city.component';
+
 
 function App() {
   return (
@@ -10,6 +12,7 @@ function App() {
     <GlobalStyle />
     <Switch>
       <Route exact path='/' component={HomePage} />
+      <Route path='/city/:cityname' component={City} />
     </Switch>
    </Fragment>
   );

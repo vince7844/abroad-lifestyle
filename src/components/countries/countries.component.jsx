@@ -36,7 +36,7 @@ class Countries extends Component {
           <CountryButton background={imageUrl} onClick={() => this.dropDownEvent(cities)} />
            {
              this.state.countryClickedOnce 
-              && this.state.cities.map(city => <DropDownMenu key={city.id}>{city.name}</DropDownMenu>)
+              && this.state.cities.map(city => <DropDownMenu cityName={city.name.toLowerCase()} key={city.id}>{city.name}</DropDownMenu>)
            }
         </CountriesContainer>)
     }
